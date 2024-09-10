@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CDD1E4">
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/linearLayout2"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="#FFFFFF"-->
+<!--        android:orientation="vertical"-->
+<!--        android:padding="25dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent">-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/homeFAQHeader"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="@string/home_faq_header"-->
+<!--            android:textAlignment="center"-->
+<!--            android:textColor="#000000"-->
+<!--            android:textSize="20sp"-->
+<!--            android:textStyle="bold" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/homeFAQInfo"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_margin="20dp"-->
+<!--            android:text="@string/home_faq_desc"-->
+<!--            android:textAlignment="center"-->
+<!--            android:textColor="#000000"-->
+<!--            android:textSize="16sp" />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/button2"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="61dp"-->
+<!--            android:backgroundTint="#FFFFFF"-->
+<!--            android:text="@string/learn_more"-->
+<!--            android:textColor="#043B5C"-->
+<!--            app:cornerRadius="18dp"-->
+<!--            app:strokeColor="#043B5C"-->
+<!--            app:strokeWidth="1dp" />-->
+
+<!--    </LinearLayout>-->
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/editTextTextPersonName2"
+            android:layout_width="337dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:background="#FFFFFF"
+            android:ems="10"
+            android:hint="Search"
+            android:inputType="textPersonName"
+            android:paddingLeft="15dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="0.5" />
+
+    </GridLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
